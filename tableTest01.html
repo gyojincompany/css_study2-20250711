@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>테이블 css 연습</title>
+    <style>
+        table {
+            caption-side: bottom; /* 캡션의 위치(top, bottom) */
+            border: 1px solid red;
+            border-collapse: collapse; /* 셀과 표테두리와 여백 제거(필수!) */
+        }
+        td, th {
+            border: 1px dotted blue;            
+            padding: 20px; /* 셀 안에서 텍스트와 셀테두리 사이의 여백 */
+            text-align: center; /* 셀 안의 텍스트들이 셀을 기준으로 가운데 정렬 */
+            background-color: rgba(228, 226, 226, 0.6);
+        }
+        
+    </style>
 </head>
 <body>
     <h2>상품 구성</h2>
-		<table border="1">
+		<table>
 			<caption>선물용과 가정용 상품 구성</caption>
 			<thead>
 				<tr>
